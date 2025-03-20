@@ -1,0 +1,262 @@
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Soft Gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.15); /* Super Transparent Glass */
+    backdrop-filter: blur(15px); /* Blur Effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Profile Picture Fix */
+header img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Header */
+header {
+    background-color: rgba(51, 51, 51, 0.7); /* Glass Effect */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* 🔥 Navbar (Updated with Fix) */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the nav */
+    gap: 25px; /* Added spacing between buttons */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px; /* Added padding for better spacing */
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly stronger glass effect */
+    transform: scale(1.05); /* Smooth hover effect */
+}
+
+/* 🔥 Section Styling - Glass Premium Look */
+section {
+    margin: 60px 10%;
+    padding: 40px;
+    position: relative;
+}
+
+/* ✨ Apply Glass Effect to Sections */
+#about, #projects, #games, #contact, #passion {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* 📌 Divider Between Sections */
+section:not(:last-child) {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 40px;
+}
+
+/* About Section */
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Projects & Games Section */
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.15); /* Glass for Projects */
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Project Button */
+.project button {
+    background-color: rgba(76, 175, 80, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.project button:hover {
+    background-color: rgba(69, 160, 73, 0.9);
+}
+
+/* 🌟 Passion Section (Fixed Layout & Animation) */
+.passion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.passion-item {
+    flex: 1 1 calc(50% - 40px); /* Two items per row */
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.passion-item img {
+    width: 80px; /* Fixed icon size */
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.passion-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.passion-item:hover {
+    transform: scale(1.05);
+}
+
+/* 📱 Mobile Responsive (Stacking Passion Items) */
+@media (max-width: 768px) {
+    .passion-item {
+        flex: 1 1 100%; /* Stack items in one column */
+    }
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Glass Footer */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+/* Buttons */
+button {
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* 🚀 Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 1024px) {
+    section {
+        margin: 40px 5%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 30px 5%;
+        padding: 25px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 140px;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        margin: 20px 5%;
+        padding: 20px;
+    }
+}
